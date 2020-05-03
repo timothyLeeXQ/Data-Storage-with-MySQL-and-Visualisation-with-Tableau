@@ -366,7 +366,7 @@ predictions = run12.predict(X_test)
 
 predictions_rounded = pd.DataFrame(data = np.round(predictions, decimals = 0),
                                    index = X_test.index,
-                                   columns = ['predicted_laptime'])
+                                   columns = ['predicted_pittime'])
 
 # COMMAND ----------
 
@@ -386,7 +386,7 @@ display(df_drivers_for_merge)
 
 df_test_data = df_pits_races_4_model[df_pits_races_4_model.index.isin(X_test.index)]
 df_test_data_w_pred = pd.concat([df_test_data, predictions_rounded], axis = 1)\
-  .rename(columns = {'milliseconds': 'laptime (ms)', 'predicted_laptime': 'predicted laptime (ms)'})
+  .rename(columns = {'milliseconds': 'pit time (ms)', 'predicted_pittime': 'predicted pit time (ms)'})
 
 # COMMAND ----------
 
