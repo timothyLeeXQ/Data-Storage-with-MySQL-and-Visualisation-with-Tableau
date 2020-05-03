@@ -17,6 +17,4 @@ visualisations
   - I realise this is a big mistake and has only been amended after the deadline. I understand if grading penalties are applied.
   - Only changes to tableau workbook are axis names and line colours
   - Last commit hash before submission deadline - 0a7b239
-=======
-[`reports/assn_4_output.md`](reports/assn_4_output.md)
->>>>>>> 0a7b239a8f7d279d81b79cd4e8a7d211fc9fed8c
+
